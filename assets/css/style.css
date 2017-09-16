@@ -1,0 +1,67 @@
+
+body {
+    background: url("../images/background.png");
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    margin: 8px;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+h1 {
+    font-size: 60px;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#carButtons {
+    padding: 10px;
+}
+
+#carAdd {
+    width: 45%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#addCar {
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    width: 39%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+.addContainer{
+    width: 100%;
+    align-items: center;
+}
+
+.gifContainer {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.gifs {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
