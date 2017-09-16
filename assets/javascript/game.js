@@ -2,7 +2,7 @@ var topics = ["BMW", "Audi", "Volkswagen", "Mercedes-Benz", "Ford", "Chevy", "To
 
 function giftastic() {
     $("#carGifs").empty();
-    var car = $(this).attr("data-name");
+    var car = $(this).attr("carMake");
     var api = "https://api.giphy.com/v1/gifs/search?q=" + car + "&api_key=dd77134347974c7688ab9630959cc7b1";
     $.ajax({
         url: api,
@@ -43,7 +43,7 @@ function giftastic() {
 function addButton() {
     $("#carButtons").empty();
     $.each(topics, function(index, element) {
-        var button = $("<button/>").addClass("car").attr("data-name", element).text(element);
+        var button = $("<button/>").addClass("car").attr("carMake", element).text(element);
         $("#carButtons").append(button);
     });
 };
