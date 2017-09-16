@@ -40,7 +40,7 @@ function displayInfo() {
     })
 }
 
-function renderButtons() {
+function addButton() {
     $("#carButtons").empty();
     $.each(topics, function(index, element) {
         var button = $("<button/>").addClass("car").attr("data-name", element).text(element);
@@ -50,11 +50,11 @@ function renderButtons() {
 $("#addCar").on("click", function() {
         var car = $("#carAdd").val().trim();
         topics.push(car);
-        renderButtons();
+        addButton();
         
         $("#carAdd").val("");
         return false;
     })
     
 $(document).on("click", ".car", displayInfo);
-renderButtons();
+addButton();
