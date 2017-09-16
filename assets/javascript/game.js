@@ -58,3 +58,5 @@ $("#addCar").on("click", function() {
     
 $(document).on("click", ".car", displayInfo);
 addButton();
+
+
